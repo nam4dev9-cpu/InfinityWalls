@@ -1,0 +1,236 @@
+/* ====================================
+   Infinity Walls & Windows Designers
+   style.css
+==================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:#333;
+    background:#f8f9fa;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#0d3b66 !important;
+}
+
+.navbar-brand{
+    font-size:26px;
+    font-weight:700;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.55),
+               rgba(0,0,0,.55)),
+               url("../images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    min-height:650px;
+
+    display:flex;
+    align-items:center;
+
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:800;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+.btn-main{
+    background:#ffc107;
+    color:#000;
+    font-weight:600;
+    padding:14px 35px;
+    border-radius:50px;
+}
+
+.btn-main:hover{
+    background:#ffb300;
+}
+
+/* Sections */
+
+.section-title{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:50px;
+    color:#0d3b66;
+}
+
+/* Cards */
+
+.card{
+    border:none;
+    transition:.4s;
+    border-radius:15px;
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.card i{
+
+font-size:55px;
+
+color:#0d3b66;
+
+}
+
+.card h4{
+
+margin-top:20px;
+
+font-weight:700;
+
+}
+
+/* Gallery */
+
+.gallery img{
+
+width:100%;
+
+border-radius:15px;
+
+transition:.4s;
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+}
+
+/* Contact */
+
+.contact-box{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+/* Footer */
+
+footer{
+
+background:#0d3b66;
+
+color:white;
+
+padding:25px;
+
+text-align:center;
+
+}
+
+/* WhatsApp Floating */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:35px;
+
+color:white;
+
+text-decoration:none;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
+color:white;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.section-title{
+
+font-size:30px;
+
+}
+
+}
